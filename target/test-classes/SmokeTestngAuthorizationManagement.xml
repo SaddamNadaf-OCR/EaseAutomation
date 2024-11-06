@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+		
+		<parameter name="browser" value="chrome" />
+	    <parameter name="url" value="http://easereleasesql.ocr-inc.com" />
+	    <parameter name="ExcelDataWB" value="\\SmokeTestDataGlobalAM.xlsx"/>
+	    
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="smokeTestingGlobalAMScripts.AddViewEditAuthorizations"/>
+      <!-- <class name="smokeTestingGlobalAMScripts.AddViewEditAuthorizationSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AddAuthorizationActivity"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationActivitySearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.CreateNewCloseOut"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationCloseOutSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationReview"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationReviewSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationStoreSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.CarnetPage"/>
+      <class name="smokeTestingGlobalAMScripts.CarnetSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.TempAuthorizationCloseOutSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.TIBAddPage"/>
+      <class name="smokeTestingGlobalAMScripts.TIBPageSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AgreementReport"/>
+      <class name="smokeTestingGlobalAMScripts.AgreementReportsSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AnnualSalesReports"/>
+      <class name="smokeTestingGlobalAMScripts.AnnualSalesReportSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.ClassifiedReport"/>
+      <class name="smokeTestingGlobalAMScripts.ClassifiedReportSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.DS4071TechDataReport"/>
+      <class name="smokeTestingGlobalAMScripts.DS_4071TechDataSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.DSP_5OffShoreReport"/>
+      <class name="smokeTestingGlobalAMScripts.DSP5OffshoreProcurementReportSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.NewPart130Report"/>
+      <class name="smokeTestingGlobalAMScripts.Part130ReportsSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.ComplianceNotes"/>
+      <class name="smokeTestingGlobalAMScripts.ComplianceNotesSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.CreateNewCongNoti"/>
+      <class name="smokeTestingGlobalAMScripts.CongressionalNotificationSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.Search3rdCountryDualNationalNDADelinquencyReport"/>
+      <class name="smokeTestingGlobalAMScripts.Search3rdCountryDualNationalSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.AgreementValuationSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.AnnualStatusDelinquencyReport"/>
+      <class name="smokeTestingGlobalAMScripts.AnnualStatusSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.ConcludedAgreementSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.HardwareInFurtheranceOfAgreementSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationAgainstAgreementReport"/>
+      <class name="smokeTestingGlobalAMScripts.Non_ConcludedAgreements"/>
+      <class name="smokeTestingGlobalAMScripts.SublicenseeNDADelinquencyReport"/>
+      <class name="smokeTestingGlobalAMScripts.SublicenseeSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.AnnualSalesDelinquencyReport"/>
+      <class name="smokeTestingGlobalAMScripts.SalesReportDetailsReports"/>
+      <class name="smokeTestingGlobalAMScripts.SalesReportSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationBalanceandPendingTransactionSummary"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationActivityAndBalance"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationBalanceSummary"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationExpiringReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationInformationReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthOwnerDiscrepancyReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthOwnerSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.ListOfAuthorizations"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationReviewDelinquencyReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationReviewPendingActionsReport"/>
+      <class name="smokeTestingGlobalAMScripts.ProvisoActionRequiredReport"/>
+      <class name="smokeTestingGlobalAMScripts.ControlPlanReport"/>
+      <class name="smokeTestingGlobalAMScripts.COUNTRYLIST"/>
+      <class name="smokeTestingGlobalAMScripts.ExportConsigneeByCountry"/>
+      <class name="smokeTestingGlobalAMScripts.ProvisoAcknowledgmentReport"/>
+      <class name="smokeTestingGlobalAMScripts.LetterOfAssuranceDiscrepancyReport"/>
+      <class name="smokeTestingGlobalAMScripts.SemiAnnualDelinquencyReport"/>
+      <class name="smokeTestingGlobalAMScripts.SemiAnnualSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.DSSClassifiedLicenseSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.DCSAReportDelinquencyReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizedExceptionReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizedExemptionReport"/>
+      <class name="smokeTestingGlobalAMScripts.CanadianExemptionSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.ExportsUnderITARExemptionDetailsReport"/>
+      <class name="smokeTestingGlobalAMScripts.ImportsUnderITARExemptionNotReExported"/>
+      <class name="smokeTestingGlobalAMScripts.ExportsUnderITARExemptionSummary"/>
+      <class name="smokeTestingGlobalAMScripts.ENCEncryptionReport"/>
+      <class name="smokeTestingGlobalAMScripts.LVSExceptionReport"/>
+      <class name="smokeTestingGlobalAMScripts.LicenseExceptionSummary"/>
+      <class name="smokeTestingGlobalAMScripts.WassenaarSemiAnnualReport"/>
+      <class name="smokeTestingGlobalAMScripts.OffshoreDelinquencyReport"/>
+      <class name="smokeTestingGlobalAMScripts.OffshoreProcurementSummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.OpenLicenseReturnReport"/>
+      <class name="smokeTestingGlobalAMScripts.PART126_13Report"/>
+      <class name="smokeTestingGlobalAMScripts.Part130AuditReport"/>
+      <class name="smokeTestingGlobalAMScripts.Part130DetailedReport"/>
+      <class name="smokeTestingGlobalAMScripts.Part130PaymentDetailsReport"/>
+      <class name="smokeTestingGlobalAMScripts.Part130SummaryReport"/>
+      <class name="smokeTestingGlobalAMScripts.Part130SupplementalReport"/>
+      <class name="smokeTestingGlobalAMScripts.TransactionsMeetingPart130"/>
+      <class name="smokeTestingGlobalAMScripts.ProductReport"/>      
+      <class name="smokeTestingGlobalAMScripts.ShipmentActivityReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationActivityReport"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationOutstandingReport"/>
+      <class name="smokeTestingGlobalAMScripts.WebServiceAuditReport"/>      -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

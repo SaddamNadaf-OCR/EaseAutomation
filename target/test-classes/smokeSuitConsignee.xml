@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="http://easetest.ocr-inc.com/" />
+	<parameter name="ExcelDataWB" value="\\SmokeTestingConsignee.xlsx" />
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="smokeTestingGConsignee.ConsigneeSearch"/>
+      <class name="smokeTestingGConsignee.AddContactDetailResult"/>
+      <class name="smokeTestingGConsignee.ConsigneeAddResult"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ProductSuite">
+
+	<!-- *************Running in "Chrome" with "Easerelease Environment" ******************* -->
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="http://easerelease.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="\\TestDataProduct.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+
+		<classes>
+		    <class name="productScripts.CreateNewProduct" />
+			<class name="productScripts.ProductValidations" />					
+		</classes>
+
+	</test>
+</suite> <!-- Suite -->

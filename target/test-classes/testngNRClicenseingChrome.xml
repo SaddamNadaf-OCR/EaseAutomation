@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DMSSuite">
+
+	<!-- *************Running in "Chrome" with "Easerelease SQL Environment" 
+		******************* -->
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com/" />
+	<parameter name="ExcelDataWB" value="\\TestDataNrcLicense.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+		<classes>
+			<class name="nrcLicensingScripts.SearchForm7Result"></class> 
+			<class name="nrcLicensingScripts.CreateNRCForm7"></class>
+			<class name="nrcLicensingScripts.NrcLicensingValidations"></class>
+			<class name="nrcLicensingScripts.NrcWebServiceAuditReportResult"></class>
+			<class name="nrcLicensingScripts.NrcSearchAdhocApplicationReportResult"></class> 
+
+
+		</classes>
+
+	</test>
+</suite> <!-- Suite -->

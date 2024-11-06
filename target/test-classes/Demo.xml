@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="browser" value="Chrome" />
+<<<<<<< .mine
+	<parameter name="url" value="https://easetest.ocr-inc.com/" />
+	<parameter name="ExcelDataWB" value="\\TestDataCommon.xlsx" />
+||||||| .r200142
+	<parameter name="url" value="https://easetest.ocr-inc.com/" />
+	<parameter name="ExcelDataWB" value="\\TestDataEO.xlsx" />
+=======
+>>>>>>> .r200684
+
+	<parameter name="url" value="http://easetest.ocr-inc.com/" />
+
+	<parameter name="ExcelDataWB" value="SmokeTestDataGExport.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+		<classes>
+
+<<<<<<< .mine
+      <class name="fileSmokeScripts.AuthOwnerSearchResult"/>
+||||||| .r200142
+		<class name="exportOperationsTest.CreateShipment"></class>
+
+=======
+		
+		<class name="smokeTestingGlobalEOScripts.CreateNewShipRequestWizard"></class>
+		
+>>>>>>> .r200684
+		</classes>
+	</test>
+</suite> <!-- Suite -->

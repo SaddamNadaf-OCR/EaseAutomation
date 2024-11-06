@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMsSuite" parallel="false">
+
+	<!-- *************Running in "Chrome" with "EaseReleaseSQL Environment" 
+		******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="SmokeTestingVMReports.xlsx" />
+
+	<test thread-count="5" name="Smoke testing Reports">
+
+		<classes>	
+		<class name="smokeTestingVMReportScripts.SearchAdhocReport" />	
+		<class name="smokeTestingVMReportScripts.SearchDebriefIncidentReport" />	 
+		<class name="smokeTestingVMReportScripts.SearchDebriefPendingReport" /> 
+		<class name="smokeTestingVMReportScripts.SearchStatusChangeReport" />	 
+		<class name="smokeTestingVMReportScripts.SearchVisitorSummaryReport" />	
+		<class name="smokeTestingVMReportScripts.SearchVisitorComprehensiveReport" />	
+		<class name="smokeTestingVMReportScripts.SearchVisitorsDiscrepancyReport" />	
+		<class name="smokeTestingVMReportScripts.SearchVisitorsLogReport" />	
+		<class name="smokeTestingVMReportScripts.VisitorRegistrationReport" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMsSuite" parallel="false">
+
+	<!-- *************Running in "IE" with "Easerelease Environment" *********************** -->
+
+	<parameter name="browser" value="ie" />
+	<parameter name="url" value="http://easerelease.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="\\TestDataCRs.xlsx"/>
+
+	<test thread-count="5" name="Regression testing">
+
+		<classes>
+		
+		</classes>
+	</test>
+</suite> <!-- Suite -->

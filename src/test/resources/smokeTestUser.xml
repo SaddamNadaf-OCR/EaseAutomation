@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- *************Running in "Chrome" with "EaseReleaseSQL Environment" 
+		******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="https://easereleasesql.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="SmokeTestUser.xlsx" />
+
+  <test thread-count="5" name="Test">
+    <classes>
+     <!-- <class name="smokeTestUserScripts.createUserProfile"/> 
+      <class name="smokeTestUserScripts.searchUserProfile"/>    -->
+     <class name="smokeTestUserScripts.createPortalUser"/>  
+     
+    
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

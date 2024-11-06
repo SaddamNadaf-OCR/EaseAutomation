@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com/" />
+	<parameter name="ExcelDataWB" value="SmokeTestDataGlobalAM.xlsx" />
+	
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="smokeTestingGlobalAMScripts.AddViewEditAuthorizations"/>
+      <class name="smokeTestingGlobalAMScripts.AddViewEditAuthorizationSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AddAuthorizationActivityScripts"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationActivitySearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.CreateNewCloseOutScript"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationCloseOutSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationReviewScripts"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationReviewSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AuthorizationStoreSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.CarnetPageScripts"/>
+      <class name="smokeTestingGlobalAMScripts.CarnetSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.TempAuthorizationCloseOutSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.TIBAddPageScript"/>
+      <class name="smokeTestingGlobalAMScripts.TIBPageSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AgreementReportScripts"/>
+      <class name="smokeTestingGlobalAMScripts.AgreementReportsSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.AnnualSalesReportsScripts"/>
+      <class name="smokeTestingGlobalAMScripts.AnnualSalesReportSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.ClassifiedReportScripts"/>
+      <class name="smokeTestingGlobalAMScripts.ClassifiedReportSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.DS4071TechDataReportScripts"/>
+      <class name="smokeTestingGlobalAMScripts.DS_4071TechDataSearchResult"/> 
+      <class name="smokeTestingGlobalAMScripts.DSP_5OffShoreReportScript"/> 
+      <class name="smokeTestingGlobalAMScripts.DSP5OffshoreProcurementReportSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.NewPart130ReportScripts"/>
+      <class name="smokeTestingGlobalAMScripts.Part130ReportsSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.ComplianceNotesScripts"/>
+      <class name="smokeTestingGlobalAMScripts.ComplianceNotesSearchResult"/>
+      <class name="smokeTestingGlobalAMScripts.CreateNewCongNotiScripts"/>
+      <class name="smokeTestingGlobalAMScripts.CongressionalNotificationSearchResult"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

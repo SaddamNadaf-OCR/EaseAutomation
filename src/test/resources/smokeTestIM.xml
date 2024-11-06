@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="IMSuite" parallel="false">
+
+	<!-- *************Running in "Chrome" with "EaseTest Environment" 
+		******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	 <parameter name="url" value="https://easetest.ocr-inc.com/" />  
+	
+	
+	<!--<parameter name="url" value="https://easereleasesql.ocr-inc.com/" />-->
+	
+	<parameter name="ExcelDataWB" value="SmokeSuiteIM.xlsx" />
+
+	<test thread-count="5" name="Smoke testing">
+
+		<classes>	
+		
+ 		 
+               <class name="smokeTestingIncidentManagement.SearchIncidentFormScripts" /> 
+               <class name="smokeTestingIncidentManagement.SearchInvestigationsFormScripts" />
+               <class name="smokeTestingIncidentManagement.SearchCorrectiveActionScripts" />
+               <class name="smokeTestingIncidentManagement.AddIncidentScript" />
+               <class name="smokeTestingIncidentManagement.VerifyFormHeading" />
+         <!--   <class name="smokeTestingIncidentManagement.AddQuestionnaireScript" />-->
+			   <class name="smokeTestingIncidentManagement.AddDocumentScript" />
+			   <class name="smokeTestingIncidentManagement.AddNotesScript" />
+			   <class name="smokeTestingIncidentManagement.DeleteIncidentScript" />
+               <class name="smokeTestingIncidentManagement.EditCorrectiveActionScripts" /> 
+               <class name="smokeTestingIncidentManagement.EditIncidentFormScripts" />
+               <class name="smokeTestingIncidentManagement.EditInvestigationFormScripts" />
+               <class name="smokeTestingIncidentManagement.SearchWorkQueuesScripts" />
+               <class name="smokeTestingIncidentManagement.AddCorrectiveActionScripts" />
+			
+			
+			
+			
+		
+			 
+			
+			</classes>
+	</test> 
+</suite> 

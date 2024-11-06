@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com/" />
+	<parameter name="ExcelDataWB" value="\\SmokeTestCommon.xlsx" />
+  <test thread-count="5" name="Test">
+    <classes>
+      
+      <!-- <class name="smokeTestingCommonScripts.CreateNewSpecialInstructionNotes"/>
+      <class name="smokeTestingCommonScripts.CreateNewImporter"/>
+      <class name="smokeTestingCommonScripts.SearchSpecialInstructionNotesScript"/>
+      <class name="smokeTestingCommonScripts.SearchGroundCarrierScripts"/>
+      <class name="smokeTestingCommonScripts.SearchCorrectiveActionScript"/>
+      <class name="smokeTestingCommonScripts.createNewRestrictedIds"/>
+      <class name="smokeTestingCommonScripts.createNewShipper"/>
+      <class name="smokeTestingCommonScripts.SearchInstructionsAndStatementsScript"/>
+      <class name="smokeTestingCommonScripts.ConsigneetypeAddResult"/>
+      <class name="smokeTestingCommonScripts.createNewSystemGeneratedNumber"/>
+      <class name="smokeTestingCommonScripts.SearchProgramScript"/>
+      <class name="smokeTestingCommonScripts.BomUploadResult"/> -->
+     <!-- <class name="smokeTestingCommonScripts.SearchBondedCarrierDetailsScript"/> -->
+      <!-- <class name="smokeTestingCommonScripts.FFSearchScript"/> -->
+     <!--  <class name="smokeTestingCommonScripts.SearchChargesScript"/> -->
+     <!-- <class name="smokeTestingCommonScripts.SearchImportersScript"/>
+      <class name="smokeTestingCommonScripts.AddFFScript"/>
+      <class name="smokeTestingCommonScripts.createNewProgram"/>
+      <class name="smokeTestingCommonScripts.CreateBondedCarrier"/>
+      <class name="smokeTestingCommonScripts.ConsigneeTypeSearch"/>
+      <class name="smokeTestingCommonScripts.CreateRegion"/>
+      <class name="smokeTestingCommonScripts.SearchShipperScript"/>
+      <class name="smokeTestingCommonScripts.createNewSegment"/>
+      <class name="smokeTestingCommonScripts.CreateNewSite"/>
+      <class name="smokeTestingCommonScripts.AddOwnerResult"/>
+      <class name="smokeTestingCommonScripts.flagreasonSearchScript"/>
+      <class name="smokeTestingCommonScripts.SearchProductFamilyScript"/>
+      <class name="smokeTestingCommonScripts.CreateNewInstructionsAndStatements"/>
+      <class name="smokeTestingCommonScripts.AuthOwnerSearchResult"/>
+      <class name="smokeTestingCommonScripts.AddFlagreason"/>
+      <class name="smokeTestingCommonScripts.CreateCorrectiveAction"/> -->
+     <!-- <class name="smokeTestingCommonScripts.SearchDocumentTypeScript"/>
+      <class name="smokeTestingCommonScripts.CreateDocumentType"/>
+      <class name="smokeTestingCommonScripts.SearchOrderCategoryScript"/>
+      <class name="smokeTestingCommonScripts.searchRestrictedIdsScript"/>
+      <class name="smokeTestingCommonScripts.CreateOrderCategory"/>
+      <class name="smokeTestingCommonScripts.CreateNewProductLines"/>
+      <class name="smokeTestingCommonScripts.DenyCosigneeScript"/> -->
+    <class name="smokeTestingCommonScripts.SearchContractsScript"/>
+      <!-- <class name="smokeTestingCommonScripts.AddEmployeeScript"/>
+      <class name="smokeTestingCommonScripts.CreateNewGroundCarrier"/>
+      <class name="smokeTestingCommonScripts.CreateNewContracts"/>
+      <class name="smokeTestingCommonScripts.CreateNewProductFamily"/>
+      <class name="smokeTestingCommonScripts.AddContactDetailResult"/>
+      <class name="smokeTestingCommonScripts.CreateCharges"/>
+      <class name="smokeTestingCommonScripts.EmployeeSearchScript"/>
+      <class name="smokeTestingCommonScripts.SearchSegmentScript"/>
+      <class name="smokeTestingCommonScripts.SearchSystemGeneratedNumberScript"/>
+      <class name="smokeTestingCommonScripts.SearchRegionScript"/>
+      <class name="smokeTestingCommonScripts.ConsigneeAddResult"/>
+      <class name="smokeTestingCommonScripts.BomSearchResult"/>
+      <class name="smokeTestingCommonScripts.SearchSiteScript"/>
+      <class name="smokeTestingCommonScripts.SearchTruckerScript"/>
+      <class name="smokeTestingCommonScripts.SearchProductLinesScript"/>
+      <class name="smokeTestingCommonScripts.ConsigneeSearch"/> --> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

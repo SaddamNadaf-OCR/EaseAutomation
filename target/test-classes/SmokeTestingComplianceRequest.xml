@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+		<parameter name="browser" value="chrome" />
+		<parameter name="url" value="http://easetest.ocr-inc.com" />
+		<parameter name="ExcelDataWB" value="\\SmokeTestComplianceRequest.xlsx" />
+	
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="smokeTestingComplianceRequestScripts.AgreementRequestCreation"/>
+      <class name="smokeTestingComplianceRequestScripts.AgrReqCreationThroughTemplate"/>
+      <class name="smokeTestingComplianceRequestScripts.AgreementReqSearchResult"/>
+      <class name="smokeTestingComplianceRequestScripts.AgreementWorkQueue"/>
+      <class name="smokeTestingComplianceRequestScripts.ExportAuthorizationRequestCreation"/>
+      <class name="smokeTestingComplianceRequestScripts.ExportRequestCreationsFromTemplate"/>
+      <class name="smokeTestingComplianceRequestScripts.ExportRequestSearchResults"/>
+      <class name="smokeTestingComplianceRequestScripts.ExportWorkQueue"/>
+      <class name="smokeTestingComplianceRequestScripts.ForeignTravelReqCreation"/>
+      <class name="smokeTestingComplianceRequestScripts.FTRThroughTemplate"/>
+      <class name="smokeTestingComplianceRequestScripts.FTRSearchResult"/>
+      <class name="smokeTestingComplianceRequestScripts.ForeignTravelWorkQueue"/>
+      <class name="smokeTestingComplianceRequestScripts.ImportRequestCreations"/>
+      <class name="smokeTestingComplianceRequestScripts.ImportRequestCreationsFromTemplate"/>
+      <class name="smokeTestingComplianceRequestScripts.ImportRequestSearchResults"/>
+      <class name="smokeTestingComplianceRequestScripts.ImportRequestWorkQueue"/>
+      <class name="smokeTestingComplianceRequestScripts.ComplianceRequestStatusMetricsReport"/>
+      <class name="smokeTestingComplianceRequestScripts.ExportAuditReport"/>
+      <class name="smokeTestingComplianceRequestScripts.ExportRequestDetailsReport"/>
+      <class name="smokeTestingComplianceRequestScripts.ExportRequestReferenceReport"/>
+      <class name="smokeTestingComplianceRequestScripts.ExportRequestSummaryReport"/>
+      <class name="smokeTestingComplianceRequestScripts.CompletedForeignTravelRequestsReport"/>
+      <class name="smokeTestingComplianceRequestScripts.ForeignTravelAuditReport"/>
+      <class name="smokeTestingComplianceRequestScripts.ForeignTravelSummaryReport"/>     
+      <class name="smokeTestingComplianceRequestScripts.OpenForeignTravelRequestsReport"/>   
+      <class name="smokeTestingComplianceRequestScripts.TravelDebriefDelinquencyReport"/>     
+      <!-- <class name="smokeTestingComplianceRequestScripts.ProductReport"/>
+      <class name="smokeTestingComplianceRequestScripts.WebServiceAuditReport"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

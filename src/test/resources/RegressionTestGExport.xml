@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="browser" value="Chrome" />
+
+	<parameter name="url" value="http://easetest.ocr-inc.com/" />
+
+	<parameter name="ExcelDataWB" value="SmokeTestDataGExport.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+		<classes>
+
+			<class name="RegressionTestingGlobalEOScripts.ReportInvoiceSummary" />
+			<class
+				name="RegressionTestingGlobalEOScripts.CreateNewDeliveryOrderTransaction" />
+			<class name="RegressionTestingGlobalEOScripts.ReportInvoiceOnHold" />
+			<class name="RegressionTestingGlobalEOScripts.ReportInvoiceDetails" />
+			<class name="RegressionTestingGlobalEOScripts.ReportAuthorizationActivity" />
+			<class name="RegressionTestingGlobalEOScripts.SearchInvoice" />
+			<class name="RegressionTestingGlobalEOScripts.SearchDutyReliefActivity" />
+			<class
+				name="RegressionTestingGlobalEOScripts.SearchDutyReliefAuthorization" />
+			<class name="RegressionTestingGlobalEOScripts.CreatePLFromShipNo" />
+			<class
+				name="RegressionTestingGlobalEOScripts.SearchLetterOfCreditInstructions" />
+			<class name="RegressionTestingGlobalEOScripts.CreateLogisticsAndShipping" />
+			<class name="RegressionTestingGlobalEOScripts.CreatePackingList" />
+			<class name="RegressionTestingGlobalEOScripts.ReportShipmentSummary" />
+			<class name="RegressionTestingGlobalEOScripts.CreateNewShipRequestWizard" />
+			<class
+				name="RegressionTestingGlobalEOScripts.ReportAuthorization_Bal_Pend" />
+			<class name="RegressionTestingGlobalEOScripts.SearchOceanBill" />
+			<class name="RegressionTestingGlobalEOScripts.ReportShipmentDetails" />
+			<class name="RegressionTestingGlobalEOScripts.SearchHouseairwaybill" />
+			<class name="RegressionTestingGlobalEOScripts.SearchSalesOrder" />
+			<class name="RegressionTestingGlobalEOScripts.SearchTransactionWorkQueue" />
+			<class name="RegressionTestingGlobalEOScripts.AddDutyReliefActivity" />
+			<class name="RegressionTestingGlobalEOScripts.SearchAirwaybill" />
+			<class name="RegressionTestingGlobalEOScripts.AddMasterAirwaybill" />
+			<class
+				name="RegressionTestingGlobalEOScripts.CreateNewSalesOrderTransaction" />
+			<class
+				name="RegressionTestingGlobalEOScripts.CreateShipmentThroughOrderConsolidation" />
+			<class name="RegressionTestingGlobalEOScripts.ReportShipmentAES" />
+			<class name="RegressionTestingGlobalEOScripts.SearchPL" />
+			<class name="RegressionTestingGlobalEOScripts.SearchDeliveryOrder" />
+			<class
+				name="RegressionTestingGlobalEOScripts.CreateNewLetterOfCreditInstructions" />
+			<class
+				name="RegressionTestingGlobalEOScripts.CreateNewInvoiceOrderTransaction" />
+			<class name="RegressionTestingGlobalEOScripts.CreateNewShipment" />
+			<class name="RegressionTestingGlobalEOScripts.SearchMasterAirwaybill" />
+			<class name="RegressionTestingGlobalEOScripts.AddDutyReliefAuthorization" />
+			<class name="RegressionTestingGlobalEOScripts.SearchShipment" />
+			<class name="RegressionTestingGlobalEOScripts.ReportShipmentAgainstLic" />
+			<class name="RegressionTestingGlobalEOScripts.SearchCustomsfiling" />
+
+		</classes>
+	</test>
+</suite> <!-- Suite -->

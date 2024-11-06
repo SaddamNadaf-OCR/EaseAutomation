@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMsSuite" parallel="false">
+
+	<!-- *************Running in "Chrome" with "EaseReleaseSQL Environment" ******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="\\TestDataCRs.xlsx"/>
+
+	<test thread-count="5" name="Regression testing">
+
+		<classes>
+		<class name="crsScripts.ImportRequestCreations" />
+		<!-- <class name="crsScripts.ImportRequestCreationsFromTemplate" />
+		<class name="crsScripts.ImportRequestErrorValidations" />
+		<class name="crsScripts.ImportRequestSearchResults" /> -->
+		</classes>
+	</test>
+</suite> <!-- Suite -->

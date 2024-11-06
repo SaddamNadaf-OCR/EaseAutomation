@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [IMSuite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="ExcelDataWB" value="RegressionSuiteIM.xlsx"/>
+  <parameter name="url" value="https://easetest.ocr-inc.com/"/>
+  <test name="Smoke testing(failed)">
+    <classes>
+      <class name="regressionTestingIncidentManagement.SearchInvestigationsFormScripts">
+        <methods>
+          <include name="searchIncidentPage"/>
+          <include name="zendtest"/>
+          <include name="astarttest"/>
+          <include name="StopSelenium"/>
+          <include name="report"/>
+          <include name="close"/>
+          <include name="startSelenium"/>
+        </methods>
+      </class> <!-- regressionTestingIncidentManagement.SearchInvestigationsFormScripts -->
+    </classes>
+  </test> <!-- Smoke testing(failed) -->
+</suite> <!-- Failed suite [IMSuite] -->

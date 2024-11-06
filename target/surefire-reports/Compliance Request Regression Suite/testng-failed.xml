@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Compliance Request Regression Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ExcelDataWB" value="RegressionTestingComplianceRequest.xlsx"/>
+  <parameter name="url" value="https://easetest.ocr-inc.com"/>
+  <test name="RegressionTesting(failed)">
+    <classes>
+      <class name="regressionTestingComplianceRequestScripts.AgreementRequestCreation">
+        <methods>
+          <include name="zendtest"/>
+          <include name="AgreementReq" invocation-numbers="0"/>
+          <include name="astarttest"/>
+          <include name="StopSelenium"/>
+          <include name="report"/>
+          <include name="close"/>
+          <include name="startSelenium"/>
+        </methods>
+      </class> <!-- regressionTestingComplianceRequestScripts.AgreementRequestCreation -->
+    </classes>
+  </test> <!-- RegressionTesting(failed) -->
+</suite> <!-- Failed suite [Compliance Request Regression Suite] -->

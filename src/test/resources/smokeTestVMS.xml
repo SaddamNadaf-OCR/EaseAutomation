@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMsSuite" parallel="false">
+
+	<!-- *************Running in "Chrome" with "EaseReleaseSQL Environment" 
+		******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="https://easerelease.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="SmokeTestVMS.xlsx" />
+
+	<test thread-count="5" name="Smoke testing">
+
+		<classes>
+
+			<class name="smokeTestingVMScripts.KioskRequestCreationReception" />
+		<!-- 	<class name="smokeTestingVMScripts.KioskRequestCreationWarehouse" />
+			<class name="smokeTestingVMScripts.RapidRegRequestCreation" />
+			<class name="smokeTestingVMScripts.RapidReqCreationWithMultiple" />
+			<class name="smokeTestingVMScripts.StandardRequestCreation" />
+			<class name="smokeTestingVMScripts.StandardReqWithMultipleOrgandVisitors" />
+			<class name="smokeTestingVMScripts.FrontDeskRequestCreation" />
+			<class name="smokeTestingVMScripts.VmctPolicyDocument" />
+			<class name="smokeTestingVMScripts.SearchAdhocReport" />
+			<class name="smokeTestingVMScripts.SearchDebriefIncidentReport" />
+			<class name="smokeTestingVMScripts.SearchDebriefPendingReport" />
+			<class name="smokeTestingVMScripts.SearchStatusChangeReport" />
+			<class name="smokeTestingVMScripts.SearchVisitorSummaryReport" />
+			<class name="smokeTestingVMScripts.SearchVisitorComprehensiveReport" />
+			<class name="smokeTestingVMScripts.SearchVisitorsDiscrepancyReport" />
+			<class name="smokeTestingVMScripts.SearchVisitorsLogReport" />
+			<class name="smokeTestingVMScripts.VisitorRegistrationReport" /> -->
+
+		</classes>
+	</test>
+</suite> 

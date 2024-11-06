@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- *************Running in "Chrome" with "EaseReleaseSQL Environment" ******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="https://easetest.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="RegressionTestUser.xlsx" />
+
+  <test thread-count="5" name="Test">
+    <classes>
+      
+     <class name="RegressionTestingUserScripts.createUserProfile"/>  
+     <!--   <class name="RegressionTestingUserScripts.BulkupdatebySBU"/> 
+       <class name="RegressionTestingUserScripts.searchUserProfile"/> 
+      <class name="RegressionTestingUserScripts.CopyUserProfile"/>
+       <class name="RegressionTestingUserScripts.EditUserProfile"/>
+       <class name="RegressionTestingUserScripts.createPortalUser"/> -->
+      
+       
+      
+      
+    </classes>
+  </test> 
+</suite>

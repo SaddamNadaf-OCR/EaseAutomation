@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="browser" value="Chrome" />
+
+	<parameter name="url" value="https://easereleasesql.ocr-inc.com/ " /> 
+
+<!-- 	<parameter name="url" value="https://easetest.ocr-inc.com/	" /> -->
+
+	<parameter name="ExcelDataWB" value="SmokeTestDataGExport.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+		<classes>
+
+			<!-- <class name="smokeTestingGlobalEOScripts.AddDutyReliefAuthorization"></class> 
+				<class name="smokeTestingGlobalEOScripts.AddDutyReliefActivity"></class> 
+
+			 <class name="smokeTestingGlobalEOScripts.CreateNewShipRequestWizard"></class>  
+				<class name="smokeTestingGlobalEOScripts.CreateLogisticsAndShipping"></class> -->
+
+			<class name="smokeTestingGlobalEOScripts.CreateNewShipment"></class>
+			<class name="smokeTestingGlobalEOScripts.CreateNewSalesOrderTransaction"></class>  
+			<class name="smokeTestingGlobalEOScripts.CreateNewInvoiceOrderTransaction"></class> 
+			<class name="smokeTestingGlobalEOScripts.CreateNewDeliveryOrderTransaction"></class> 
+			<class name="smokeTestingGlobalEOScripts.CreateNewLetterOfCreditInstructions"></class>
+			<class name="smokeTestingGlobalEOScripts.CreateShipmentThroughOrderConsolidation"></class>
+			<class name="smokeTestingGlobalEOScripts.CreatePackingList"></class> 
+			<class name="smokeTestingGlobalEOScripts.CreatePLFromShipNo"></class>
+			<class name="smokeTestingGlobalEOScripts.AddMasterAirwaybill"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchShipment"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchSalesOrder"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchDeliveryOrder"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchInvoice"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchLetterOfCreditInstructions"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchTransactionWorkQueue"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchPL"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchCustomsfiling"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchAirwaybill"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchHouseairwaybill"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchMasterAirwaybill"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchOceanBill"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchDutyReliefAuthorization"></class>
+			<class name="smokeTestingGlobalEOScripts.SearchDutyReliefActivity"></class>  
+			 
+ 
+		</classes>
+	</test>
+</suite> <!-- Suite -->

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMsSuite" parallel="false">
+
+	<!-- *************Running in "IE" with "EaseReleaseSQL Environment" *********************** -->
+
+	<parameter name="browser" value="ie" />
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="\\TestDataVms.xlsx"/>
+
+	<test thread-count="5" name="Regression testing">
+
+		<classes>
+
+			 <class name="vmsScripts.RapidRegRequestCreation" /> 
+			<class name="vmsScripts.SearchAdhocReport" />
+			 <class name="vmsScripts.RapidRegistrationValidations" />
+			<class name="vmsScripts.VmctPolicyDocument" />
+			<class name="vmsScripts.FrontDeskRequestCreation" />
+			<class name="vmsScripts.VmctRapidRegFields" />
+			<class name="vmsScripts.VmctRapidRegBlk" />
+			<class name="vmsScripts.VmctOtherSettings" />
+			<class name="vmsScripts.RapidRegReqSVR" />
+			
+		
+			
+			<class name="vmsScripts.StandardRequestCreation" />
+			<class name="vmsScripts.StandardReqWithMultipleOrgandVisitors" />
+			<class name="vmsScripts.StandardRequestSVR" />
+			<class name="vmsScripts.StandardReqExcelUpload" />
+			<class name="vmsScripts.VisitorRequestTemplate" />
+			<class name="vmsScripts.StandardReqPolicyDocument" />
+			<class name="vmsScripts.StandardReqCloseButton" />
+			<class name="vmsScripts.StandardReqErrorValidations" />
+			<class name="vmsScripts.StandardReqCopy" />
+			<class name="vmsScripts.StandardReqAddHostNewField" />
+			<class name="vmsScripts.StandardReqSendInviteDiasble" />
+			<class name="vmsScripts.PreApprovedReqWithoutOrgincheckinkiosk" />
+			<class name="vmsScripts.KioskRequestCreation" />
+			<class name="vmsScripts.KRVmctOtherSettingsTimeFromAndTo" />
+			<class name="vmsScripts.KioskSecureAppUsingKioskIP" />
+			<class name="vmsScripts.KReqPolicyDocument" />
+			<class name="vmsScripts.KioskOnHoldRequestViewDetailHits" />
+			<class name="vmsScripts.KRequestIdentifyingDocValidationInRapidScreen" />
+			<class name="vmsScripts.VisitorRegistrationReport" />
+			
+
+		</classes>
+	</test>
+</suite> <!-- Suite -->

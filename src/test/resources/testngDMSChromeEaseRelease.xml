@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DMSSuite">
+
+	<!-- *************Running in "Chrome" with "Easerelease SQL Environment" ******************* -->
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com " />
+	<parameter name="ExcelDataWB" value="\\TestDataDMS.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+
+		<classes>
+		   <class name="dmsScripts.CreateNewDMSFormConfig" />
+			<class name="dmsScripts.SearchDMSFormConfg" />
+			<class name="dmsScripts.DeleteDMSFormConfiguration" />
+			<class name="dmsScripts.CreateNewControlAttributes" />
+			<class name="dmsScripts.SearchControlAttributes" />
+			<class name="dmsScripts.InactiveControlAttributes" />
+			<class name="dmsScripts.CreateNewControlAttributesDetail" />
+			<class name="dmsScripts.SearchControlAttributesDetail" />
+			<class name="dmsScripts.InactiveControlAttributesDetail" />
+			<class name="dmsScripts.CreateNewDocumentTypeControlAttributesMapping" />
+			<class name="dmsScripts.SearchDocumentTypeControlAttributes" />
+			<class name="dmsScripts.CreateNewUserControlAccessAttributesDetail" />
+			<class name="dmsScripts.SearchUserControlAccessAttributesDetail" />
+			<class name="dmsScripts.AddNewDocumentServer" />
+			<class name="dmsScripts.AddNewDocumentServerAccess" />
+			<class name="dmsScripts.SearchDocumentServerAccessConfigurationPage" />
+			<class name="dmsScripts.InactiveDocumentServerAcessConfiguration" />
+			<class name="dmsScripts.SearchEaseDMS" />							
+		</classes>
+
+	</test>
+</suite> <!-- Suite -->

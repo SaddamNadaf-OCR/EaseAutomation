@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">
+
+	<parameter name="browser" value="edge" />
+
+	<parameter name="url"
+		value="https://easetest.ocr-inc.com/" />
+	<parameter name="ExcelDataWB" value="\\SmokeTestTables.xlsx" />
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="smokeTestingTablesScripts.CreateOfficeOfExit" />
+			<!--
+<class name="smokeTestingTablesScripts.CreateNewDocumentType" />
+
+
+			<class name="regressionTestingGlobalProduct.ProductSearchResult" />
+			<class name="regressionTestingGlobalProduct.ProdReportScript" />
+			<class name="regressionTestingGlobalProduct.ProductPopUp" />
+			<class name="regressionTestingGlobalProduct.CreateNewProduct" />
+			<class name="regressionTestingGlobalProduct.EditProduct" />
+			<class name="regressionTestingGlobalProduct.ProductUploadFileResult" />
+			<class name="regressionTestingGlobalProduct.ProductReport" />
+	
+<
+-->
+		</classes>
+
+
+	</test> <!--
+	
+	  Test -->
+</suite> <!--
+Suite -->
+

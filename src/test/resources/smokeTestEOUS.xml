@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="browser" value="Chrome" />
+
+	<!-- <parameter name="url" value="https://easetest.ocr-inc.com/" /> -->
+
+	<parameter name="url" value="https://easereleasesql.ocr-inc.com/ " />
+
+	<parameter name="ExcelDataWB" value="//SmokeTestDataExportUS.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+		<classes>
+			<!-- <class name="smokeTestingEOUSScripts.AddDutyReliefActivityUS"></class> 
+				<class name="smokeTestingEOUSScripts.AddDutyReliefAuthorizationUS"></class> 
+				<class name="smokeTestingEOUSScripts.CreateLogisticsAndShippingUS"></class> 
+				<class name="smokeTestingEOUSScripts.CanadianExemptionSummaryReportUS"></class> 
+				<class name="smokeTestingEOUSScripts.ExportsUnderITARExemptionDetailsReportUS"></class> 
+				<class name="smokeTestingEOUSScripts.ExportsUnderITARExemptionSummaryReportUS"></class> 
+				<class name="smokeTestingEOUSScripts.ImportsUnderITARExemptionNotReExportedUS"></class> -->
+
+
+
+			<class name="smokeTestingEOUSScripts.CreateNewDeliveryOrderTransactionUS"></class>
+			<class name="smokeTestingEOUSScripts.CreateNewInvoiceOrderTransactionUS"></class>
+			<class name="smokeTestingEOUSScripts.CreateNewLetterOfCreditInstructionsUS"></class>
+			<class name="smokeTestingEOUSScripts.CreateNewSalesOrderTransactionUS"></class>
+			<class name="smokeTestingEOUSScripts.CreateNewShipmentUS"></class>
+			<class name="smokeTestingEOUSScripts.CreatePackingListUS"></class>
+			<class name="smokeTestingEOUSScripts.CreatePLFromShipNoUS"></class>
+			<class name="smokeTestingEOUSScripts.CreateShipmentThroughOrderConsolidationUS"></class>
+			
+			<class name="smokeTestingEOUSScripts.AddMasterAirwaybillUS"></class>
+
+
+			<class name="smokeTestingEOUSScripts.AuthorizationActivityReportUS"></class>
+			<class name="smokeTestingEOUSScripts.AuthorizationOutstandingReportUS"></class>
+			<class name="smokeTestingEOUSScripts.ENCEncryptionReportUS"></class>
+
+			<class name="smokeTestingEOUSScripts.IncotermReportUS"></class>
+			<class name="smokeTestingEOUSScripts.LicenseExceptionSummaryReportUS"></class>
+			<class name="smokeTestingEOUSScripts.LVSExceptionReportUS"></class>
+			<class name="smokeTestingEOUSScripts.ShipmentWLSAuditReportUS"></class>
+			<class name="smokeTestingEOUSScripts.WassenaarSemiAnnualReportUS"></class>
+			<class name="smokeTestingEOUSScripts.WebServiceAuditReportUS"></class>
+
+
+			<class name="smokeTestingEOUSScripts.SearchAESStatusChangeReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchAirwaybillUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchAuthorizationBalanceSummaryReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchAuthorizationExpiringReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchAuthorizationInformationReportUS"></class>
+			
+			<class name="smokeTestingEOUSScripts.SearchCancelledDisapprovedReturnedShipmentMetricsBySBUReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchCustomsfilingUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchDeliveryOrderUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchDutyReliefActivityUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchDutyReliefAuthorizationActivityAndBalanceReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchDutyReliefAuthorizationUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchExdsAuditStatusReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchHouseairwaybillUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchInvoiceUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchLetterOfCreditInstructionsUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchMasterAirwaybillUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchOceanBillUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchOrderWLSAuditReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchPackingListReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchPLUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchProductMassControlAuditReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchProductReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchSalesOrderUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchShipmentAdhocReportUS"></class>
+			
+			<class name="smokeTestingEOUSScripts.SearchShipmentSummaryBySBUReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchShipmentSummaryBySiteReportUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchShipmentUS"></class>
+			<class name="smokeTestingEOUSScripts.SearchTransactionWorkQueueUS"></class>
+			<class name="smokeTestingEOUSScripts.ReportMisDisapprovalMetrics"></class> 
+			
+			<class name="smokeTestingEOUSScripts.CreateNewShipRequestWizardUS"></class>
+			 <class name="smokeTestingEOUSScripts.SearchShipmentProcessingStatisticsReportUS"></class>
+			<class name="smokeTestingEOUSScripts.ReportMisShipmentSummaryByRegion"></class>
+			<class name="smokeTestingEOUSScripts.ReportMisShipSumBySBUFinalShip"></class>
+			<class name="smokeTestingEOUSScripts.ReportMisShipt_Processing_Statistics_BySBUSiteRegion"></class> 
+
+
+		</classes>
+	</test>
+</suite> <!-- Suite -->

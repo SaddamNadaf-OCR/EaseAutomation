@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GTCSuite">
+
+	<!-- *************Running in "Chrome" with "Easerelease Environment" ******************* -->
+
+	<parameter name="browser" value="chrome" />	
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com"/>
+	<parameter name="ExcelDataWB" value="\\TestDataGtc.xlsx"/>
+	<test  name="GTC Regression testing">
+		<classes>
+       <class name="GlobalTradeControlScript.GtcNewScreening"/>
+       <class name="GlobalTradeControlScript.GtcNewScreeningWithWatchListAndExportLicense"/>
+       <class name="GlobalTradeControlScript.GtcNewScreeningMultipleEntity"/>
+       <class name="GlobalTradeControlScript.GtcSearchResult"/>
+       <class name="GlobalTradeControlScript.GTCErrorValidations"/>
+       <class name="GlobalTradeControlScript.GtcClassificationEngine"/>
+    </classes>
+	</test> 	
+</suite> <!-- Suite -->

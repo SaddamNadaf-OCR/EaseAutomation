@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="IMSuite" parallel="false">
+
+	<!-- *************Running in "Chrome" with "EaseTest Environment" 
+		******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	 <parameter name="url" value="https://easetest.ocr-inc.com/" />  
+	
+	
+	<!--<parameter name="url" value="https://easereleasesql.ocr-inc.com/" />-->
+	
+	<parameter name="ExcelDataWB" value="RegressionSuiteIM.xlsx" />
+
+	<test thread-count="5" name="Smoke testing">
+
+		<classes>	
+		
+ 		 
+        <!--   <class name="regressionTestingIncidentManagement.SearchIncidentFormScripts" /> ok
+               <class name="regressionTestingIncidentManagement.SearchInvestigationsFormScripts" />
+               <class name="regressionTestingIncidentManagement.SearchCorrectiveActionScripts" />
+               <class name="regressionTestingIncidentManagement.AddIncidentScript" />
+               <class name="regressionTestingIncidentManagement.VerifyFormHeading" />
+              <class name="regressionTestingIncidentManagement.AddQuestionnaireScript" />
+			   <class name="regressionTestingIncidentManagement.AddDocumentScript" />
+			   <class name="regressionTestingIncidentManagement.AddNotesScript" />
+			   <class name="regressionTestingIncidentManagement.DeleteIncidentScript" />
+               <class name="regressionTestingIncidentManagement.EditCorrectiveActionScripts" /> 
+               <class name="regressionTestingIncidentManagement.EditIncidentFormScripts" />
+               <class name="regressionTestingIncidentManagement.EditInvestigationFormScripts" />
+               <class name="regressionTestingIncidentManagement.SearchWorkQueuesScripts" />
+               <class name="regressionTestingIncidentManagement.AddCorrectiveActionScripts" />-->
+			
+			<class name="regressionTestingIncidentManagement.SearchInvestigationsFormScripts" />
+			
+			
+		
+			 
+			
+			</classes>
+	</test> 
+</suite> 

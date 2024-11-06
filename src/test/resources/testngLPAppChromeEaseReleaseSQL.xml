@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMsSuite" parallel="false">
+
+	<!-- *************Running in "Chrome" with "EaseReleaseSQL Environment"	******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="http://easereleasesql.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="\\TestDataLP.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+		<classes>
+		
+			<class name="lpAppBelgiumScripts.LpBelgiumAddTransaction" />
+			<class name="lpAppBelgiumScripts.LpbelgiumSearchAuthorizationStatusResults" />
+			<class name="lpAppBelgiumScripts.LpbelgiumCommonSearchAuthorizationResults" />
+			<class name="lpAppBelgiumScripts.LpBelgiumErrorValidations" />
+			<class name="lpAppBelgiumScripts.LpBelgiumCopyRequestAndCreateNewRequest" />			
+			<class name="lpAppBelgiumScripts.LpBelgiumDeleteRequest" />
+			<class name="lpAppBelgiumScripts.LpBelgiumAddFromTemplate" />
+		
+		</classes>
+	</test>
+</suite> <!-- Suite -->

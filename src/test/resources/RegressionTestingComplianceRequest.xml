@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Compliance Request Regression Suite">
+	
+		<parameter name="browser" value="chrome" />
+	    <parameter name="url" value="https://easetest.ocr-inc.com"/>
+	    <parameter name="ExcelDataWB" value="RegressionTestingComplianceRequest.xlsx"/>
+	    
+  <test thread-count="5" name="RegressionTesting">
+    <classes>
+	  <class name="regressionTestingComplianceRequestScripts.AgreementRequestCreation"/>
+	  <!-- <class name="regressionTestingComplianceRequestScripts.AgreementReqSearchResult"/>
+	  <class name="regressionTestingComplianceRequestScripts.AgrReqCreationThroughTemplate"/>
+	  <class name="regressionTestingComplianceRequestScripts.AgreementReqEditFunctionality"/>
+	  <class name="regressionTestingComplianceRequestScripts.AgreementReqCopy"/> -->
+      <!--<class name="regressionTestingComplianceRequestScripts.ExportAuthorizationRequestCreation"/>-->
+      <!-- <class name="regressionTestingComplianceRequestScripts.ExportRequestSearchResults"/> -->
+      <!--<class name="regressionTestingComplianceRequestScripts.ExportRequestCreationsFromTemplate"/>-->
+      <!-- <class name="regressionTestingComplianceRequestScripts.ExportReqCopy"/> -->
+      <!--<class name="regressionTestingComplianceRequestScripts.ExportRequestEditFunctionality"/>
+      <class name="regressionTestingComplianceRequestScripts.ForeignTravelReqCreation"/>-->
+      <!-- <class name="regressionTestingComplianceRequestScripts.FTRSearchResult"/> -->
+      <!--<class name="regressionTestingComplianceRequestScripts.FTRThroughTemplate"/>
+      <class name="regressionTestingComplianceRequestScripts.FTRCopy"/>-->
+      <!-- <class name="regressionTestingComplianceRequestScripts.ImportRequestCreations"/>
+      <class name="regressionTestingComplianceRequestScripts.ImportRequestSearchResults"/>
+      <class name="regressionTestingComplianceRequestScripts.ImportRequestCreationsFromTemplate"/>
+      <class name="regressionTestingComplianceRequestScripts.ImportReqCopy"/>
+      <class name="regressionTestingComplianceRequestScripts.AgreementWorkQueue"/>
+      <class name="regressionTestingComplianceRequestScripts.ExportWorkQueue"/> -->
+      <!--<class name="regressionTestingComplianceRequestScripts.ForeignTravelWorkQueue"/>-->
+      <!-- <class name="regressionTestingComplianceRequestScripts.ImportRequestWorkQueue"/>
+      <class name="regressionTestingComplianceRequestScripts.ComplianceRequestStatusMetricsReport"/>
+	  <class name="regressionTestingComplianceRequestScripts.ExportAuditReport"/>
+      <class name="regressionTestingComplianceRequestScripts.ExportRequestDetailsReport"/>
+      <class name="regressionTestingComplianceRequestScripts.ExportRequestReferenceReport"/>
+      <class name="regressionTestingComplianceRequestScripts.ExportRequestSummaryReport"/>
+      <class name="regressionTestingComplianceRequestScripts.CompletedForeignTravelRequestsReport"/>
+      <class name="regressionTestingComplianceRequestScripts.ForeignTravelAuditReport"/>
+      <class name="regressionTestingComplianceRequestScripts.ForeignTravelSummaryReport"/>
+      <class name="regressionTestingComplianceRequestScripts.OpenForeignTravelRequestsReport"/>
+      <class name="regressionTestingComplianceRequestScripts.TravelDebriefDelinquencyReport"/>
+      <class name="regressionTestingComplianceRequestScripts.ProductReport"/>
+      <class name="regressionTestingComplianceRequestScripts.WebServiceAuditReport"/>
+      <class name="regressionTestingComplianceRequestScripts.SearchAgreementReqTemplate"/>
+      <class name="regressionTestingComplianceRequestScripts.AddAgreementRequestTemplate"/> -->
+      <!--<class name="regressionTestingComplianceRequestScripts.CopyAgreementRequestTemplate"/>-->
+      <!-- <class name="regressionTestingComplianceRequestScripts.SearchExportRequestTemplate"/> -->
+      <!--<class name="regressionTestingComplianceRequestScripts.AddExportRequestTemplate"/>-->
+      <!-- <class name="regressionTestingComplianceRequestScripts.CopyExportReqTemplate"/>
+      <class name="regressionTestingComplianceRequestScripts.SearchFTRTemplate"/>
+      <class name="regressionTestingComplianceRequestScripts.AddFTRTemplate"/> -->
+      <!--<class name="regressionTestingComplianceRequestScripts.CopyFTRTemplate"/>-->
+      <!-- <class name="regressionTestingComplianceRequestScripts.SearchImportReqTemplate"/>
+      <class name="regressionTestingComplianceRequestScripts.AddImportRequestTemplate"/>
+      <class name="regressionTestingComplianceRequestScripts.CopyImportRequestTemplate"/>
+      
+      <class name="regressionTestingComplianceRequestScripts.AgreemetRequestwithImportAllDocument"/>    
+      <class name="regressionTestingComplianceRequestScripts.ExportReqWithImportAllDocuments"/>
+      <class name="regressionTestingComplianceRequestScripts.ImportRequestWithImportAllDocuments"/> -->
+    </classes>
+  </test>
+ </suite> <!-- Suite -->

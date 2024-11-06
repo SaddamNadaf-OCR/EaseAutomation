@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="ExcelDataWB" value="ExportOperationRegressionTest.xlsx"/>
+  <parameter name="url" value="https://easetest.ocr-inc.com"/>
+  <test name="Test(failed)">
+    <classes>
+      <class name="RegressionTestingEOUSScripts.ChecktheAddCopyandDeletefunctionalitiesofShipmentCartons">
+        <methods>
+          <include name="zendtest"/>
+          <include name="checktheAddCopyandDeletefunctionalitiesofShipmentLineItems" invocation-numbers="0"/>
+          <include name="astarttest"/>
+          <include name="StopSelenium"/>
+          <include name="report"/>
+          <include name="close"/>
+          <include name="startSelenium"/>
+        </methods>
+      </class> <!-- RegressionTestingEOUSScripts.ChecktheAddCopyandDeletefunctionalitiesofShipmentCartons -->
+      <class name="RegressionTestingEOUSScripts.ChecktheAddCopyandDeletefunctionalitiesofShipmentLineItems">
+        <methods>
+          <include name="zendtest"/>
+          <include name="checktheAddCopyandDeletefunctionalitiesofShipmentLineItems" invocation-numbers="0"/>
+          <include name="astarttest"/>
+          <include name="StopSelenium"/>
+          <include name="report"/>
+          <include name="close"/>
+          <include name="startSelenium"/>
+        </methods>
+      </class> <!-- RegressionTestingEOUSScripts.ChecktheAddCopyandDeletefunctionalitiesofShipmentLineItems -->
+      <class name="RegressionTestingEOUSScripts.ChecktheAddCopyandDeletefunctionalitiesofInvoiceCharges">
+        <methods>
+          <include name="zendtest"/>
+          <include name="astarttest"/>
+          <include name="StopSelenium"/>
+          <include name="checktheAddCopyandDeletefunctionalitiesofShipmentLineItems" invocation-numbers="0"/>
+          <include name="report"/>
+          <include name="close"/>
+          <include name="startSelenium"/>
+        </methods>
+      </class> <!-- RegressionTestingEOUSScripts.ChecktheAddCopyandDeletefunctionalitiesofInvoiceCharges -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

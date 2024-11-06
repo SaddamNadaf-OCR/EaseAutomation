@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMsSuite" parallel="false">
+
+	<!-- *************Running in "Chrome" with "EaseReleaseSQL Environment" 
+		******************** -->
+
+	<parameter name="browser" value="Chrome" />
+	<parameter name="url" value="https://easetest.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="RegressionTestingVMS.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+
+		<classes>  
+					
+		    
+		    
+	 		<class name="regressionTestingVMScripts.KioskRequestCreationReception" />
+  <!--      
+	  		<class name="regressionTestingVMScripts.ChangeRequstIconShowingForApprovedStandardRequest" /> 
+		
+	
+		  // FRONT DESK
+		    <class name="regressionTestingVMScripts.FrontDeskRequestCreation" />
+		   
+			//RAPID REQUEST
+			
+		    <class name="regressionTestingVMScripts.RapidRegRequestCreation" />	
+			<class name="regressionTestingVMScripts.RapidReqCreationWithMultiple" />
+			<class name="regressionTestingVMScripts.RapidRegReqSVR" />
+			<class name="regressionTestingVMScripts.RapidRegistrationValidations" />
+			<class name="regressionTestingVMScripts.RapidReqCreationExcelUpload" />
+			<class name="regressionTestingVMScripts.DomesticForeignLogicTypeOfPerson" />
+			<class name="regressionTestingVMScripts.ReviewWorkflowTrigger" />
+			
+			
+			//STANDARD REQUEST
+			<class name="regressionTestingVMScripts.StandardRequestCreation" />	
+			<class name="regressionTestingVMScripts.StandardReqWithMultipleOrgandVisitors" />
+			<class name="regressionTestingVMScripts.StandardRequestSVR" />	
+			<class name="regressionTestingVMScripts.StandardReqSendInviteDiasble" />	
+			<class name="regressionTestingVMScripts.StandardReqPolicyDocument" />	
+			<class name="regressionTestingVMScripts.StandardReqExcelUpload" />
+			<class name="regressionTestingVMScripts.StandardReqCopy" />
+			<class name="regressionTestingVMScripts.StandardReqErrorValidations" />
+			<class name="regressionTestingVMScripts.CheckListValidations" />
+			<class name="regressionTestingVMScripts.StandardReqCloseButton" />
+			<class name="regressionTestingVMScripts.StandardReqAddHostNewField" />
+			
+			//above test scenario is use to approve request which is pending for review.
+			
+			<class name="regressionTestingVMScripts.VMRequestorCheckBoxLogic" />
+			<class name="regressionTestingVMScripts.CreateVisitorRequestWithMultipleReviewerAndCheckList" />
+			<class name="regressionTestingVMScripts.ReviewWorkflowTrigger" />
+			<class name="regressionTestingVMScripts.SecurityCheckNotification" />
+			<class name="regressionTestingVMScripts.ForeignDomesticLogicStandardTypeOfPerson" />
+			<class name="regressionTestingVMScripts.OrgReprsentForeignInterest" />
+			
+			
+			//KIOSK REQUEST
+			
+			<class name="regressionTestingVMScripts.KioskRequestCreationReception" />
+			<class name="regressionTestingVMScripts.KioskRequestCreationWarehouse" />
+			<class name="regressionTestingVMScripts.KReqPolicyDocument" />
+			<class name="regressionTestingVMScripts.KioskOnHoldRequestViewDetailHits" />
+			
+			//VMCT RELATED SCENARIO'S
+			<class name="regressionTestingVMScripts.VMCTDataElementsLabeledWrong" />
+			<class name="regressionTestingVMScripts.VmctOtherSettings" />
+			<class name="regressionTestingVMScripts.VmctRapidRegFields" />
+			<class name="regressionTestingVMScripts.VmctRapidRegBlk" /> 
+			<class name="regressionTestingVMScripts.VMCTOrgPreviewIcon" />
+			<class name="regressionTestingVMScripts.VmctPolicyDocument" />
+			
+			
+			//REPORTS
+			
+			<class name="regressionTestingVMScripts.SearchAdhocReport" />
+			<class name="regressionTestingVMScripts.SearchDebriefIncidentReport" />
+			<class name="regressionTestingVMScripts.SearchDebriefPendingReport" />
+			<class name="regressionTestingVMScripts.SearchStatusChangeReport" />
+			<class name="regressionTestingVMScripts.SearchVisitorSummaryReport" />
+			<class name="regressionTestingVMScripts.SearchVisitorComprehensiveReport" />
+			<class name="regressionTestingVMScripts.SearchVisitorsDiscrepancyReport" />
+			<class name="regressionTestingVMScripts.SearchVisitorsLogReport" />
+			<class name="regressionTestingVMScripts.VisitorRegistrationReport" />
+			<class name="regressionTestingVMScripts.SearchMetrixByCitizenship" />
+			<class name="regressionTestingVMScripts.SearchMetrixBySite" />
+			<class name="regressionTestingVMScripts.SearchMetrixBySegment" />
+			<class name="regressionTestingVMScripts.SearchMetrixByCountryOfIncorporation" />
+            <class name="regressionTestingVMScripts.SearchMetrixByCountryRepresented" />
+            <class name="regressionTestingVMScripts.SearchMetrixByExportAuthority" />
+			<class name="regressionTestingVMScripts.SearchMetrixByProgram" /> 
+        
+			
+			//FILES
+			<class name="regressionTestingVMScripts.AddRegisterVisitr" />
+			<class name="regressionTestingVMScripts.AddVisitorTemplate" />
+			
+			
+			//General Test Scenario's for Notification and Validation 
+			<class name="regressionTestingVMScripts.VerifyCombinationEscortNoEscortRequired" />
+			<class name="regressionTestingVMScripts.DisableAttachFileCapabilityValidations" />
+			<class name="regressionTestingVMScripts.VisitorDPLStatusOnHoldApprovedAndDOB" />
+			<class name="regressionTestingVMScripts.NotificationsOnSuccessfulStatusChangeValidations" />
+			<class name="regressionTestingVMScripts.FieldNameOverriddenwithCustomField" />
+			<class name="regressionTestingVMScripts.MeetingCategoryUnderChecklistValidations" /> 
+			<class name="regressionTestingVMScripts.ReviewWorkflowTrigger" />
+			<class name="regressionTestingVMScripts.VisitPurposeDescription" />
+			<class name="regressionTestingVMScripts.AddVisitorToVisitorResultGrid" />
+			<class name="regressionTestingVMScripts.FirstVisitorPersonEquipmentGetCopiedToOtherVisitorPersons" /> 
+			<class name="regressionTestingVMScripts.RequestVisitorInfoStandard" />
+			<class name="regressionTestingVMScripts.ReSendConfirmationRapid" />
+			<class name="regressionTestingVMScripts.QuestionnaireCancelWrongScreen" />
+			<class name="regressionTestingVMScripts.PreApprovedReqWithoutOrgincheckinkiosk.java" />
+		 -->
+		
+		</classes>
+	</test>
+</suite> 

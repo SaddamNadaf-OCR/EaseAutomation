@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="VMsSuite" parallel="false">
+
+	<!-- *************Running in "Chrome" with "EaseReleaseSQL Environment" 
+		******************** -->
+
+	<parameter name="browser" value="chrome" />
+	<parameter name="url" value="https://easereleasesql.ocr-inc.com" />
+	<parameter name="ExcelDataWB" value="\\TestDataVms.xlsx" />
+
+	<test thread-count="5" name="Regression testing">
+
+		<classes>
+		
+	
+		<class name="vmsScripts.VerifyKioskOnHoldReqLogReport" />
+		
+			
+ 
+	
+		  <!--   <class name="vmsScripts.RapidReqCreationWithMultiple" />
+		    <class name="vmsScripts.RapidRegReqSVR" />
+		    <class name="vmsScripts.RapidRegistrationValidations" />
+			<class name="vmsScripts.RapidRegRequestCreation" />
+			<class name="vmsScripts.RapidRegistrationValidations" />
+		    
+		    
+		    
+			<class name="vmsScripts.KioskRequestCreationWarehouse" />
+			<class name="vmsScripts.KioskRequestCreationReception" />
+			<class name="vmsScripts.KReqPolicyDocument" />
+			<class name="vmsScripts.KioskSecureAppUsingKioskIP" />
+			<class name="vmsScripts.KRequestIdentifyingDocValidationInRapidScreen" />
+			
+			<class name="vmsScripts.KRVmctOtherSettingsTimeFromAndTo" />
+			
+			<class name="vmsScripts.KioskOnHoldRequestViewDetailHits" />
+			<class name="vmsScripts.KioskEmailPhoneGeneration" /> 
+			
+			
+			 
+			 <class name="vmsScripts.VMCTDataElementsLabeledWrong" />
+			<class name="vmsScripts.VmctOtherSettings" />
+			
+			<class name="vmsScripts.VmctPolicyDocument" /> 
+			<class name="vmsScripts.VMCTOrgPreviewIcon" /> 
+			<class name="vmsScripts.VmctRapidRegBlk" />
+			<class name="vmsScripts.VmctRapidRegFields" /> 
+
+			<class name="vmsScripts.DisableAttachFileCapabilityValidations" />
+			<class name="vmsScripts.VisitorDPLStatusOnHoldApprovedAndDOB" />
+			<class name="vmsScripts.NotificationsOnSuccessfulStatusChangeValidations" />
+			<class name="vmsScripts.FieldNameOverriddenwithCustomField" />
+		
+		<class name="vmsScripts.FrontDeskRequestCreation" />
+			<class name="vmsScripts.VisitorcheckinbeforeRequestDate" />	
+			<class name="vmsScripts.VMRequestorCheckBoxLogic" />
+			<class name="vmsScripts.MeetingCategoryUnderChecklistValidations" /> 
+	
+			
+			<class name="vmsScripts.StandardReqCloseButton" />
+			
+			
+			<class name="vmsScripts.CheckListValidations" />
+			<class name="vmsScripts.StandardReqExcelUpload" />
+			<class name="vmsScripts.StandardReqPolicyDocument" />
+			<class name="vmsScripts.StandardReqCloseButton" />
+			<class name="vmsScripts.StandardReqCopy" />
+			<class name="vmsScripts.StandardReqAddHostNewField" />
+			<class name="vmsScripts.QuestionnaireCancelWrongScreen" />
+			<class name="vmsScripts.StandardRequestCreation" />
+			<class name="vmsScripts.CreateVisitorRequestWithMultipleReviewerAndCheckList" />
+			<class name="vmsScripts.StandardReqWithMultipleOrgandVisitors" />
+			<class name="vmsScripts.StandardReqErrorValidations" />
+			<class name="vmsScripts.StandardRequestSVR" />
+			<class name="vmsScripts.StandardReqCopy" />
+			<class name="vmsScripts.StandardReqSendInviteDiasble" />
+			
+			
+			
+			
+			
+			
+			<class name="vmsScripts.AddRegisterVisitr" />
+			<class name="vmsScripts.AddVisitorTemplate" />
+			<class name="vmsScripts.VisitorRequestTemplate" /> 
+			
+			
+
+			
+		 	<class name="vmsScripts.SearchDebriefIncidentReport" />
+			<class name="vmsScripts.SearchAdhocReport" />
+			<class name="vmsScripts.SearchMetrixByCountryOfIncorporation" />
+			<class name="vmsScripts.SearchMetrixByCitizenship" />
+			<class name="vmsScripts.VisitorRegistrationReport" /> 
+			
+			
+			<class name="vmsScripts.PortalUpdatedByIssue29676" />
+			
+			<class name="vmsScripts.UpdatetheEmailAddressOfTheVisitor30237" />
+			<class name="vmsScripts.RapidRegFrontdeskScreenAddEditBlocksIssue29834" />
+			<class name="vmsScripts.AddVisitorToVisitorResultGrid29913" />
+			<class name="vmsScripts.OrganizationForeignInterestSaveIssue30010" />
+			<class name="vmsScripts.CancelVisitRequestButtondoesnotWork29798" />
+			<class name="vmsScripts.ChangeRequestIcon30060" />
+			<class name="vmsScripts.FirstVisitorPersonEquipmentGetCopiedToOtherVisitorPersons29669" /> -->
+ 
+		</classes>
+	</test>
+</suite> <!-- Suite -->
