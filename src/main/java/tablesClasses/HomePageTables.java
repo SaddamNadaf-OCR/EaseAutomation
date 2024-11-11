@@ -50,6 +50,7 @@ public class HomePageTables extends GenericMethods {
 	public static final String OCR_HomePage_ModeOfPayment	="//a[contains (text(),'Mode Of Payment')]";
 	public static final String OCR_HomePage_ModeOfTransport	="//a[contains (text(),'Mode of Transport')]";
 	public static final String OCR_HomePage_LocationDetails	="//a[contains (text(),'Location Details')]";
+	public static final String OCR_HomePage_ITARExemption	="(//a[contains (text(),'ITAR Exemption')])[2]";
 	
 //--------------------------------------Constructor--------------------------------------------------------//
 	public HomePageTables(WebDriver driver, ExtentTest test) {
@@ -124,6 +125,12 @@ public class HomePageTables extends GenericMethods {
 		Wait.waitfor(3);
 		
 		clickElement(driver, test, OCR_HomePage_LocationDetails, "Click on Location Details");
+	}
+	public void movetoITARExemptions() {
+		mouseOver(driver, test, OCR_HomePage_TablesEO, "Mouseover to Mode of Transport");
+		Wait.waitfor(3);
+		
+		clickElement(driver, test, OCR_HomePage_ITARExemption, "Click on ITAR Exemptions");
 	}
 
 	public void movetocommondata() {
@@ -226,6 +233,21 @@ public void clickonCommercialCurrencyConversion() {
 		clickElement(driver, test, OCR_HomePage_subcontrollingagency, "Controlling agency");
 	}
 	
+	public void movetoAgencyMISCcodeType() {
+		mouseOver(driver, test, OCR_HomePage_TablesEO, "Mouseover to Controlling agency");
+		Wait.waitfor(3);
+		clickElement(driver, test, OCR_HomePage_controllingagency, "Controlling agency");
+		Wait.waitfor(1);
+		clickElement(driver, test, OCR_HomePage_MISCagencycodetype, "Controlling agency-misc agency type");
+	}
+	
+	public void movetoAgencyMISCcode() {
+		mouseOver(driver, test, OCR_HomePage_TablesEO, "Mouseover to Controlling agency");
+		Wait.waitfor(3);
+		clickElement(driver, test, OCR_HomePage_controllingagency, "Controlling agency");
+		Wait.waitfor(1);
+		clickElement(driver, test, OCR_HomePage_AgencyMiscCode, "Controlling agency-misc agency code");
+	}
 	
 //---------------------------------------Home Page--------------------------------------------------------//
 	public void returnToGExportHomePage() {
